@@ -1,0 +1,19 @@
+{
+    "name": "ibnuridho/bangun-ruang",
+    "description": "Learn package",
+    "version": "1.0.0",
+    "type": "library",
+    "require": {
+        "php": "^7.2.5",
+        "illuminate/support": "^7.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ibnu Ridho Rifai",
+            "email": "ibnu.ridho@edi-indonesia.co.id"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+}
