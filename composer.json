@@ -7,13 +7,36 @@
         "php": "^7.2.5",
         "illuminate/support": "^7.0"
     },
+    "require-dev": {
+        "orchestra/testbench": "^5.1"
+    },
     "license": "MIT",
     "authors": [
         {
             "name": "Ibnu Ridho Rifai",
-            "email": "ibnu.ridho@edi-indonesia.co.id"
+            "email": "jakrhifa@gmail.com"
         }
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Ibnuridho\\BangunRuang\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ibnuridho\\BangunRuang\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ibnuridho\\BangunRuang\\Providers\\BangunRuangServiceProvider"
+            ],
+            "aliases": {
+                "PersegiPanjang": "Ibnuridho\\BangunRuang\\Facades\\PersegiPanjang"
+            }
+        }
+    }
 }
